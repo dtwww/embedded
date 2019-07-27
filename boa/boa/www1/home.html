@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MATRIX 简介</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #C6C6C6;
+}
+.style9 {font-size: 12px}
+-->
+</style></head>
+<body>
+<table width="760" border="0" align="center">
+  <tr>
+     <td width="10" height="40"></td>
+     <td width="750" height="40" align="center"><span style="font-size: 16px; font-weight: bold;">三星S3C2410X参考板 - MATRIX IV</span></td>
+  </tr>
+  <tr>
+     <td width="10" height="20"></td>
+     <td width="750" height="20" align="left"><span style="font-size: 14px; font-weight: bold;">声明：</span></td>
+  </tr>
+  <tr>
+     <td width="10" height="20"></td>
+    <td width="750"><table width="100%" border="0">
+      <tr>
+        <td width="100%" height="12"><span style="font-size: 12px">1. MATRIX IV套件由广州友善之臂电子公司独立设计生产，不与其他任何公司或单位存在版权冲突问题。</span></td>
+      </tr>
+      <tr>
+        <td width="100%" height="12"><span style="font-size: 12px">2. MATRIX IV套件的软件系统取自韩国MIZI公司发布的免费开放源代码嵌入式操作系统arm-linux，友善之臂在此基础上增加/移植了部分驱动程序/应用程序，它的软件系统不与任何公司或单位存在版权冲突问题。</span></td>
+      </tr>
+      <tr>
+        <td width="100%" height="12"><span style="font-size: 12px">3. MATRIX IV全部以二进制和源代码方式提供软件给客户。</span></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20"></td>
+  </tr>
+  <tr>
+    <td width="10" height="24"></td>
+    <td width="750" height="24" align="left"><span style="font-size: 14px; font-weight: bold;">MATRIX IV概览</span></td>
+  </tr>
+  <tr>
+    <td width="10" height="100"></td>
+    <td width="750" height="100" align="center"><img src="images/matrix4top.jpg" width="713" height="526"></td>
+  </tr>
+  <tr>
+    <td height="20"></td>
+    <td height="20" align="right"><a href="matrix4-photos.html"><span style="color: #FF0000">更多图片</span>...</a></td>
+  </tr>
+  <tr>
+    <td height="20"></td>
+    <td height="20" align="center"></td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="center"><div align="left" style="font-weight: bold; font-size: 14px;">MATRIX IV简介： </div></td>
+  </tr>
+
+  <tr>
+    <td height="20"></td>
+    <td height="20" align="left">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 12px">MATRIX IV 是由广州友善之臂电子公司设计生产的一款ARM9参考板，它基于三星公司的ARM处理器S3C2410X， 采用6层板设计。S3C2410X 使用 ARM920T 核，内部带有全性能的 MMU( 内存处理单元 ) ，它适用于设计移动手持设备类产品，具有高性能、低功耗、接口丰富和体积小能优良特性。 MATRIX IV 正是基于此芯片本身的各种特点而设计的。 </span></p>
+    <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;&nbsp;MATRIX IV 在尽可能小的板面上集成了网卡、音频、 USB Host 、 USB Slave 、一个标准串口、键盘和一些用户灯等设备接口，并且引出 CPU 的大部分信号引脚，正如你所看到的，它是一个完全可以独立运行的电路板。我们的目的：让它可不仅以作为专业研发工程师的参考板/试验板，进行项目或产品的原型设计；更可以作为一台移动微型电脑的主板给嵌入式DIY爱好者直接使用。 </p>
+    <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;&nbsp;在软件上，我们采用了韩国MIZI公司所公布的开放源代码的免费嵌入式操作系统arm-Linux，基于该平台及其开发工具包，我们编写和移植了丰富的软件供用户使用和参考，如控制台模式下的Mp3 播放器，Web 服务器(支持CGI)， Ftp及其服务器，Telnet及其服务器，键盘标准驱动程序等等。这些软件的二进制可执行程序及其源代码均收录在所附带的光盘中，并预装在 MATRIX IV 参考板上，用户开机即可使用。</p>
+	<p style="font-size: 12px">&nbsp;&nbsp;&nbsp;&nbsp;为让用户能够更加方便的使用MATRIX IX，我们编写了十分详细的使用手册，它包含在MATRIX IV套件中，另外我们会根据用户的要求和反馈意见，陆续在网站上推出一些使用MATRIX IV实例的文章给大家。 </p>
+	<p style="font-size: 12px">&nbsp;&nbsp;&nbsp;&nbsp;MATRIX IV分为两种版本面向用户：个人版和专业版。<span style="font-weight: bold">二者的软硬件完全相同</span>，不同之处在于所提供的电路图格式和售后服务方式。个人版将提供pdf格式的电路原理图和Email方式的服务支持，专业版将提供Protel格式的电路原理图和电话方式的服务支持。</p>
+	</td>
+  </tr>
+  <tr>
+    <td height="20"></td>
+    <td height="20" align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="left"><span style="font-size: 14px; font-weight: bold;">MATRIX IV硬件特性：</span></td>
+  </tr>
+  <tr>
+    <td width="10" height="100"></td>
+    <td width="750" height="100" align="center" valign="top">
+	<!-- 硬件特性 -->
+	<table width="78%" border="1" align="center" bordercolor="#000000" bgcolor="#CCCCCC">
+	<tr bordercolor="#333333">
+	  <td width="78" align="center"><span style="font-weight: bold">序号</span></td>
+		<td width="78" height="20" align="center"><span style="font-weight: bold; font-size: 12px;">名称</span></td>
+		<td width="553" height="20" align="center"><span style="font-weight: bold; font-size: 12px;"> 描述</span></td>		
+		<td width="99" height="20" align="center"><span style="font-weight: bold; font-size: 12px;">注释</span></td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">1</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">CPU</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">三星S3C2410X，ARM920T内核，203MHz主频</span></td>
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">2</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">ROM</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">32Mbytes NAND Flash(K9F5608)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">3</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">RAM</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">64Mbytes SDRAM，133MHz刷新频率(HY57V561620BT-H)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">4</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">LAN</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个10M的以太网卡(CS8900A)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">5</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">SERIAL</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个DB9串口(MAX3232CSE)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">6</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">USB Host </span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个USB Host接口(USB 1.1协议) </span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td align="center">7</td>
+	  <td height="20" align="center"><span style="font-size: 12px">USBSlave </span></td>
+	  <td height="20" align="center"><span style="font-size: 12px">一个USB Slave接口，(USB1.1协议 ) </span></td>
+	  <td height="20" align="center">&nbsp;</td>
+	  </tr>
+	<tr bordercolor="#333333">
+	  <td align="center">8</td>
+	  <td height="20" align="center"><span style="font-size: 12px">Audio</span></td>
+	  <td height="20" align="center"><span style="font-size: 12px">一个音频接口(在背面)(双声道，可直接接耳塞)</span></td>
+	  <td height="20" align="center">&nbsp;</td>
+	  </tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">9</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">RTC</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">外接32.768KHz的晶振，给内部实时时钟使用。</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">10</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">JTAG</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个10针的JTAG，主要用来下载bootloader</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">11</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">LED</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">8个可编程用户LED(带驱动程序)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">12</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">Keyboard</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">8个可编程用户按键(带有驱动程序)</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">13</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">Switch</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个电源开关</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">14</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">Reset</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">一个复位按键</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">15</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">EXTENTION</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">两排紧凑型扩展接口(200个引脚)，引出大部分CPU信号</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	<tr bordercolor="#333333">
+	  <td align="center">16</td>
+	  <td height="20" align="center"><span style="font-size: 12px">POWER</span></td>
+	  <td height="20" align="center"><span style="font-size: 12px">一个开关电源</span></td>
+	  <td height="20" align="center">&nbsp;</td>
+	  </tr>
+	<tr bordercolor="#333333">
+	  <td align="center">17</td>
+	  <td height="20" align="center"><span style="font-size: 12px">Fixed Hole</span></td>
+	  <td height="20" align="center"><span style="font-size: 12px">四个定位孔(直径3mm)</span></td>
+	  <td height="20" align="center">&nbsp;</td>
+	  </tr>
+	<tr bordercolor="#333333">
+	  <td width="78" align="center">18</td>
+		<td width="78" height="20" align="center"><span style="font-size: 12px">Boardsize</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">108mmx86mm</span></td>		
+		<td width="99" height="20" align="center">&nbsp;</td>
+	</tr>
+	</table>
+	<!-- 硬件特性结束-->
+	</td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="center"></td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="left"><span style="font-size: 14px; font-weight: bold;">软件特性：</span></td>
+  </tr>
+  <tr>
+    <td width="10" height="100"></td>
+    <td width="750" height="100" align="center" valign="top">
+	<!-- 软件特性开始-->
+	<table width="78%" border="1" align="center" bordercolor="#000000" bgcolor="#CCCCCC">
+	<tr>
+		<td width="132" height="20" align="center"><span style="font-weight: bold; font-size: 12px;">名称</span></td>
+		<td width="226" height="20" align="center"><span style="font-weight: bold; font-size: 12px;">&#21151;&#33021;&#29305;&#24615;</span></td>		
+		<td width="226" height="20" align="center"><span style="font-weight: bold; font-size: 12px;">说明</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="6" align="center"><span style="font-size: 12px">BIOS</span></td>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">bootloader</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">启动系统(可以设置启动时间)</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Xmodem</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">支持Xmodem传输协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Update Flash</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">支持更新Flash</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Set Kernel Parameter</span> </td>		
+		<td height="20" align="center"><span style="font-size: 12px">支持设置内内核参数</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Set Partation</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">支持设置分区</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">etc.</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">其他</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="3" align="center"><span style="font-size: 12px">内核</span></td>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">Linux kernel 2.4.18 </span></p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">使用2.4.18稳定内核</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">ROM/CRAM/EXT2/FAT32/NFS file system</span></p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">支持ROM/CRAM/EXT2/FAT32/NFS等文件系统</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">etc.</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">其他</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="13" align="center"><span style="font-size: 12px">驱动支持</span></td>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">System Interrupt &amp; Timer Driver </span></p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">系统中断和系统时钟驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">Serial device driver </span></p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">三个串口驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">Block memory device driver</span> </p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">块设备驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">Flash memory device driver</span> </p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">Nand Flash驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9"><span style="">10Base-T external Ethernet device driver</span> </p></td>		
+		<td height="20" align="center"><span class="style9">外接10M以太网卡驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p><span style="font-size: 12px">RTC (Real Time Clock) Driver</span> </p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">实时时钟驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">USB Host driver</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">USB Host驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">USB Slave </span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">USB Slave驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">LEDS</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">LEDS灯驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Buttons</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">用户按键驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Many Country Language Support</span> </td>		
+		<td height="20" align="center"><span style="font-size: 12px">国际化支持</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">LCD</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">液晶(LCD)驱动</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">Frame Buffer</span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">Frame Buffer</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="14" align="center"><span style="font-size: 12px">网络协议及网络应用程序</span></td>
+		<td width="226" height="20" align="center"><p><span style="font-size: 12px">TCP/IP</span></p></td>		
+		<td height="20" align="center"><span style="font-size: 12px">完整的TCP/IP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">ICMP</span></td>
+		<td height="20" align="center"><span style="font-size: 12px">ICMP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span style="font-size: 12px">ARP/RARP</p></span></td>		
+		<td height="20" align="center"><span style="font-size: 12px">ARP/RARP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">UDP</p></td>		
+		<td height="20" align="center"><span class="style9">UDP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">PPP</p></td>		
+		<td height="20" align="center"><span class="style9">PPP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">IGMP</p></td>		
+		<td height="20" align="center"><span class="style9">IGMP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span class="style9"> SMTP </span></td>		
+		<td height="20" align="center"><span class="style9">SMTP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><span class="style9">SNMP</span></td>		
+		<td height="20" align="center"><span class="style9">SNMP协议</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">NFS</p></td>		
+		<td height="20" align="center"><span class="style9">支持NFS Server和NFS Client </span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Telnet Server </p></td>		
+		<td height="20" align="center"><span class="style9">Telnet服务器</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">File transfer (FTP client / server) </p></td>		
+		<td height="20" align="center"><span class="style9">FTP传输服务(包括登录和服务器)</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Remote login (telnet) </p></td>		
+		<td height="20" align="center"><span class="style9">Telnet远程登录</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Web server (HTTP v1.1, boa) </p></td>		
+		<td height="20" align="center"><span class="style9">Web&#26381;&#21153;&#22120;(boa)</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Web base management suite (Sample only) </p></td>		
+		<td height="20" align="center"><span class="style9">&#36890;&#36807;&#32593;&#39029;&#31649;&#29702;&#30446;&#26631;&#26495;</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="2" align="center"><p class="style9">系统升级</p></td>
+		<td width="226" height="20" align="center"><p class="style9">Console &amp; FTP</p></td>		
+		<td height="20" align="center"><span class="style9">在控制台下使用FTP升级系统</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Online</p></td>		
+		<td height="20" align="center"><span class="style9">在线升级</span></td>
+		</tr>
+	<tr>
+		<td width="132" rowspan="5" align="center"><span class="style9">配置系统和服务</span></td>
+		<td width="226" height="20" align="center"><p class="style9">Local console through RS232 and remote telnet configuration and management(Sample Only) </p></td>		
+		<td height="20" align="center"><span class="style9">通过串口控制台或telnet远程登录配置系统</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">WEB configuration and management(Sample Only) </p></td>		
+		<td height="20" align="center"><span class="style9">通过浏览器进行简单配置</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Network ping </p></td>		
+		<td height="20" align="center"><span class="style9">使用ping检查系统 </span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">Ifconfig, route, inetd </p></td>		
+		<td height="20" align="center"><span class="style9">提供ifocnfig, route,inetd等网络配置和服务程序</span></td>
+		</tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">login, sh, echo, discard </p></td>		
+		<td height="20" align="center"><span class="style9">登录和其他程序</span></td>
+		</tr>
+	<tr>
+	  <td height="20" align="center"><span class="style9">&#22522;&#26412;&#24037;&#20855;</span></td>
+	  <td height="20" align="center"><span class="style9">cat, chmod, discard, echo, flashfsd, flashwrite, free, genhtml, hostname, init, kill, loader, ls, mkdir, mount, ps, reboot, rm, smanaged, sysconf, yes</span></td>
+	  <td height="20" align="center"><span class="style9">Linux常用命令</span></td>
+	  </tr>
+	<tr>
+	  <td rowspan="3" align="center"><span class="style9">实用应用程序</span></td>
+	  <td height="20" align="center"><span class="style9">mp3play</span></td>
+	  <td height="20" align="center"><span class="style9">控制台下的mp3播放器</span></td>
+	  </tr>
+	<tr>
+	  <td height="20" align="center"><span class="style9">leds</span></td>
+	  <td height="20" align="center"><span class="style9">控制用户LED</span></td>
+	  </tr>
+	<tr>
+	  <td height="20" align="center"><span class="style9">key</span></td>
+	  <td height="20" align="center"><span class="style9">键盘使用程序</span></td>
+	  </tr>
+	<tr>
+	  <td width="132" rowspan="4" align="center"><span class="style9">第三方USB设备驱动</span></td>
+	  <td height="20" align="center"><span class="style9">优盘</span></td>
+	  <td height="20" align="center"><span class="style9">支持各种优盘直接插拔使用</span></td>
+	  </tr>
+	<tr>
+		<td width="226" height="20" align="center"><span class="style9">移动硬盘</span></td>		
+		<td height="20" align="center"><span class="style9">支持各种移动硬盘插拔使用</span></td>
+		</tr>
+	<tr>
+	  <td height="20" align="center"><span class="style9">USB Hub </span></td>
+	  <td height="20" align="center"><span class="style9">支持各种USB Hub </span></td>
+	  </tr>
+	<tr>
+		<td width="226" height="20" align="center"><p class="style9">其他</p></td>		
+		<td height="20" align="center"><span class="style9">其他</span></td>
+		</tr>
+		
+	</table>
+	<!-- ????????-->
+	</td>
+  </tr>
+
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="center"></td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="left"><span style="font-size: 14px; font-weight: bold;">MATRIX IV套件内容： </span></td>
+  </tr>
+
+  <tr>
+    <td width="10" height="100"></td>
+    <td width="750" height="100" align="center" valign="top">
+	<!-- ????????-->
+	<table width="78%" border="1" align="center" bordercolor="#333333" bgcolor="#CCCCCC">
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">1</span></td>
+		<td height="20" align="left"><span class="style9">一个MATRIX IV参考电路板</span></td>		
+		</tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">2</span></td>
+		<td height="20" align="left"><span class="style9">一本MATRIX IV使用手册 </span></td>		
+		</tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">3</span></td>
+		<td height="20" align="left"><span class="style9">两张光盘(MIZI和MATRIX IV光盘) </span></td>		
+		</tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">4</span></td>
+		<td height="20" align="left"><span class="style9">一条DB9标准串口线</span></td>		
+		</tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">5</span></td>
+		<td height="20" align="left"><span class="style9"> 一条 RJ-45 水晶头对等网线 </span></td>		
+		</tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">6</span></td>
+		<td height="20" align="left"><span class="style9">一条USB电缆</span></td>		
+		</tr>
+	<tr>
+	  <td height="20" align="center"><span class="style9">7</span></td>
+	  <td height="20" align="left"><span class="style9">一条JTAG电缆</span></td>
+	  </tr>
+	<tr>
+		<td width="78" height="20" align="center"><span class="style9">8</span></td>
+		<td height="20" align="left"><span class="style9"> 一个 5V/2.5A 专用开关电源 </span></td>		
+		</tr>
+	</table>
+	<!-- ????????-->
+	</td>
+  </tr>
+  <tr>
+    <td width="10" height="20"></td>
+    <td width="750" height="20" align="center"></td>
+  </tr>
+
+
+</table>
+</body>
+</html>

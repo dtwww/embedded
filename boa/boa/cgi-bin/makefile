@@ -1,0 +1,30 @@
+
+include $(TOPDIR)Rules.mak
+
+EXTRA_LIBS += -lsqlite3
+
+EXEC1 =  ./pass.cgi
+EXEC2 =  ./find_routines.cgi
+EXEC3 =  ./findemployee.cgi
+#OBJS1 =  main-bak1.o 
+OBJS1 =  pass.o sqlite.o utils.o
+OBJS2 =  find_routines.o sqlite.o utils.o
+OBJS3 =  findemployee.o sqlite.o utils.o
+
+all: $(EXEC1) $(EXEC2) $(EXEC3) 
+
+$(EXEC1): $(OBJS1)
+	$(CC) $(LDFLAGS) -I ./sqlite/ -L ./sqlite/ -o $@ $(OBJS1)  $(EXTRA_LIBS)
+$(EXEC2): $(OBJS2)
+	$(CC) $(LDFLAGS) -I ./sqlite/ -L ./sqlite/ -o $@ $(OBJS2)  $(EXTRA_LIBS)
+$(EXEC3): $(OBJS3)
+	$(CC) $(LDFLAGS) -I ./sqlite/ -L ./sqlite/ -o $@ $(OBJS3)  $(EXTRA_LIBS)
+install:
+	$(EXP_INSTALL) $(EXEC1) $(INSTALL_DIR)
+	$(EXP_INSTALL) $(EXEC2) $(INSTALL_DIR)
+	$(EXP_INSTALL) $(EXEC3) $(INSTALL_DIR)
+
+clean:
+	-rm -f $(EXEC1) *.elf *.elf2flt *.gdb *.o
+	-rm -f $(EXEC2) *.elf *.elf2flt *.gdb *.o
+	-rm -f $(EXEC3) *.elf *.elf2flt *.gdb *.o

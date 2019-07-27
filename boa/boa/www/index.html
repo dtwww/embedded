@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <label style="font-size:15px; margin-left:35%">160400204孔唐潮 160400205董婷文 160400602崔丁洁</label>
+    <title>实验室考勤系统</title>
+<style>
+
+h1{text-align: center}
+h3{text-align: center}
+
+.bgimg {
+    /*background-image: url("./background_1440x900.png");*/
+    /*-moz-background-size:100% 100%; */
+    /*background-image: linear-gradient( 135deg, #43CBFF 0%, #9708CC 100%);*/
+    /*height: 100%;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+    /*color: white;*/
+    /*font-family: "Courier New", Courier, monospace;*/
+    font-size: 20px;
+}
+
+div.tab {
+    /*overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;*/
+    /*margin-top: 10%;*/
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+   /* float: left;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 80px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    /*background-color: #dcdcdc;*/
+    color: #e1e100;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    /*background-color: #dcdcdc;*/
+    color: #e1e100;
+}
+
+.tabcontent1 {
+    /*display: none;*/
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    /*border-top: none;*/
+    margin-left: 32%;
+    /*margin-top: 50px;*/
+    margin-top: -200px;
+}
+
+.tabcontent2, .tabcontent3 {
+    /*display: none;*/
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    /*border-top: none;*/
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-top: -160px;
+}
+
+/*.tabcontent3 {
+    padding: 6px 12px;
+    margin-top: -270px;
+    margin-left: -20px;
+}*/
+
+.tabcontent4 {
+    padding: 6px 12px;
+    margin-top: -200px;
+}
+
+/*input[type=text],input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}*/
+
+/*input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+.tabcontent1 input[type=submit]:hover, .tabcontent2 input[type=submit]:hover, .tabcontent3 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.tabcontent1 input[type=text], .tabcontent1 input[type=password], .tabcontent2 input[type=text], .tabcontent3 input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.tabcontent1 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 21%;
+}
+
+.tabcontent2 input[type=submit], .tabcontent3 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 23%;
+}
+
+.container-tab {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.square {
+    width:400px; 
+    height:400px;
+    background:white;
+    margin: 0 auto;
+}
+
+td {
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body class="bgimg" bgcolor="#dfffdf">
+
+<h1>实验室考勤系统</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tab-1')" id="defaultOpen">录入</button>
+  <br />
+  <button class="tablinks" onclick="openCity(event, 'Tab-2')">查找</button>
+  <br />
+  <button class="tablinks" onclick="openCity(event, 'Tab-3')">统计</button>
+  <br />
+  <button class="tablinks" onclick="openCity(event, 'Tab-4')">监控</button>
+</div>
+
+<div id="Tab-1" class="tabcontent">
+<div class="tabcontent1">
+  <form method="post" action="/cgi-bin/pass.cgi">
+    <label for="_number">学号</label>
+    <input type="text" id="_number" name="number">
+    <br />
+    <label for="_name">姓名</label>
+    <input type="text" id="_name" name="name">
+    <br />
+    <label for="_pwd">密码</label>
+    <input type="password" id="_pwd" name="psw">
+    <br />
+    <input type="submit" value="提交">
+  </form>
+</div>
+</div>
+
+<div id="Tab-2" class="tabcontent">
+<div class="tabcontent2">
+ <!--  <h3>查找员工(根据员工号)</h3>
+  <p>根据员工号查找员工信息：</p> -->
+  <div class="container-tab">
+	  <form method="post" action="/cgi-bin/findemployee.cgi">
+	        <label for="_pnumber">学号：</label>
+	        <input type="text" id="_pnumber" name="pnumber">
+            <br />
+	        <input type="submit" value="查找">
+	  </form>
+  </div>
+<!-- 	<div class="container-tab">
+	   <form method="post" action="/cgi-bin/findemployee.cgi">
+	        <label for="_pname">姓名：</label>
+	        <input type="text" id="_pname" name="pname">
+            <br />
+	        <input type="submit" value="查找">
+	   </form>
+   </div> -->
+</div>
+</div>
+
+<div id="Tab-3" class="tabcontent">
+<div class="tabcontent3">
+  <!-- <h3>已签到</h3> -->
+    <form method="get" action="/cgi-bin/find_routines.cgi">
+        <label>日期：</label>
+        <input type="text" name="date">
+        <br />
+        <input type="submit" value="查找">
+    </form>
+<!--     <table cellpadding="10px" align="center">
+      <tr text-align="center">
+        <th>学号</th>
+        <th>姓名</th>
+      </tr>
+      <tr>
+        <td>160400204</td>
+        <td>孔唐潮</td>
+      </tr>
+      <tr>
+        <td>160400205</td>
+        <td>董婷文</td>
+      </tr>
+      <tr>
+        <td>160400602</td>
+        <td>崔丁洁</td>
+      </tr>
+    </table>
+  <h3>已签退</h3>
+    <table cellpadding="10px" align="center">
+      <tr text-align="center">
+        <th>学号</th>
+        <th>姓名</th>
+      </tr>
+      <tr>
+        <td>160400204</td>
+        <td>孔唐潮</td>
+      </tr>
+    </table>
+  <h3>迟到</h3>
+    <table cellpadding="10px" align="center">
+      <tr text-align="center">
+        <th>学号</th>
+        <th>姓名</th>
+      </tr>
+      <tr>
+        <td>160400204</td>
+        <td>孔唐潮</td>
+      </tr>
+    </table> -->
+</div>
+</div>
+
+<div id="Tab-4" class="tabcontent">
+<div class="tabcontent4">
+  <center>
+            <applet codebase="." archive="JWebcamPlayer.jar" code="JWebcamPlayer.class" name="JWebcamPlayer" id="JWebcamPlayer" align="center" width="350" height="290"  mayscript>
+                <param name="Color" value="#ffffff" />
+                <param name="Server" value="127.0.0.1" />
+                <param name="Port" value="7070" />
+                <param name="scriptable" value="true" />
+                <param name="mayscript" value="true" />
+                <strong>You need to download Java.<br />
+                    Click <a href="http://www.java.com/en/download/manual.jsp">here: http://www.java.com/en/download/manual.jsp</a>
+                </strong><br />
+            </applet>
+		</center>
+</div>
+</div>
+
+<script>
+function openCity(evt, tabName) {
+    var i, tabcontent, tablinks;
+    //tabcontent1-4全部不显示
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    //四个链接全部失效
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    //选中的tabcontent显示
+    document.getElementById(tabName).style.display = "block";
+    //选中的链接有效
+    evt.currentTarget.className += " active";
+}
+//首次进入页面默认点击了第一个链接，即“录入”
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

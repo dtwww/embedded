@@ -1,0 +1,42 @@
+[01/Jan/1970:00:10:14 +0000] boa: server version Boa/0.94.13
+[01/Jan/1970:00:10:14 +0000] boa: server built Nov  9 2016 at 09:18:31.
+[01/Jan/1970:00:10:14 +0000] boa: starting server pid=883, port 80
+[01/Jan/1970:00:12:05 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:12:11 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:18:56 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:21:43 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:24:03 +0000] caught SIGTERM, starting shutdown
+[01/Jan/1970:00:24:03 +0000] exiting Boa normally (uptime 829 seconds)
+[01/Jan/1970:00:24:08 +0000] boa: server version Boa/0.94.13
+[01/Jan/1970:00:24:08 +0000] boa: server built Nov  9 2016 at 09:18:31.
+[01/Jan/1970:00:24:08 +0000] boa: starting server pid=898, port 80
+[01/Jan/1970:00:24:24 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:24:29 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:24:32 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:24:36 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:30:28 +0000] caught SIGTERM, starting shutdown
+[01/Jan/1970:00:30:28 +0000] exiting Boa normally (uptime 380 seconds)
+[01/Jan/1970:00:30:43 +0000] boa: server version Boa/0.94.13
+[01/Jan/1970:00:30:43 +0000] boa: server built Nov  9 2016 at 10:47:22.
+[01/Jan/1970:00:30:43 +0000] boa: starting server pid=906, port 80
+[01/Jan/1970:00:30:55 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:31:08 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:31:11 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:31:52 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:31:54 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:41:34 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:41:55 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:42:11 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:42:19 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:42:29 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:42:45 +0000] request from 192.168.1.111 "GET /favicon.ico HTTP/1.1" ("/mnt/nfs/boa-0.94.13/favicon.ico"): document open: No such file or directory
+[01/Jan/1970:00:42:48 +0000] request from 192.168.1.111 "GET /favicon.ico HTTP/1.1" ("/mnt/nfs/boa-0.94.13/favicon.ico"): document open: No such file or directory
+[01/Jan/1970:00:42:49 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:46:10 +0000] caught SIGTERM, starting shutdown
+[01/Jan/1970:00:46:10 +0000] exiting Boa normally (uptime 927 seconds)
+[01/Jan/1970:00:46:15 +0000] boa: server version Boa/0.94.13
+[01/Jan/1970:00:46:15 +0000] boa: server built Nov  9 2016 at 10:47:22.
+[01/Jan/1970:00:46:15 +0000] boa: starting server pid=920, port 80
+[01/Jan/1970:00:46:39 +0000] cgi_header: unable to find LFLF
+[01/Jan/1970:00:59:03 +0000] caught SIGTERM, starting shutdown
+[01/Jan/1970:00:59:03 +0000] exiting Boa normally (uptime 768 seconds)
